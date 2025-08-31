@@ -1,11 +1,9 @@
-import PostCard from '@/components/post/PostCard';
 import { getPost } from '@/lib/post';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ja } from 'date-fns/locale';
 import { format } from 'date-fns';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { Car } from 'lucide-react';
 
 type Params = { params: Promise<{ id: string }> };
 

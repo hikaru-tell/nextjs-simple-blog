@@ -20,7 +20,6 @@ export async function getPost(id: string) {
 export async function searchPosts(search: string) {
   //記事検索
   const decodedSearch = decodeURIComponent(search);
-  const normalizedSearch = decodedSearch.replace(/[|s　]+/g, ' ').trim();
   const searchWords = decodedSearch.split('').filter(Boolean);
 
   const filters = searchWords.map((word) => ({

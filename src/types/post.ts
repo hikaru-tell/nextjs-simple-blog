@@ -1,5 +1,3 @@
-import { type } from 'os';
-
 //記事の型を定義
 export type Post = {
   id: string;
